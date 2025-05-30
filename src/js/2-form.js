@@ -1,6 +1,6 @@
 let formData = {
     email: "",
-    massage: ""
+    message: ""
 }
 
 const form = document.querySelector(".feedback-form");
@@ -30,7 +30,7 @@ form.addEventListener('submit', (event) => {
     const { email, message } = formData;
 
     if (email.trim() === "" || message.trim() === "") {
-      alert("Fill please all fields");
+      alert("Please fill all fields");
       return;
     } console.log(formData);
     localStorage.removeItem(STORAGE_KEY);
